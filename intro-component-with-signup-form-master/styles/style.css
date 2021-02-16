@@ -1,0 +1,99 @@
+/* variables */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* base styles */
+body {
+  background-color: #ff7a7a;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-part form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* fonts */
+body {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+/* mobile styles */
+body {
+  background-image: url(../images/bg-intro-mobile.png);
+}
+
+.description {
+  margin: 90px 0 40px 0;
+  width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.description h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.description p {
+  font-weight: 500;
+}
+
+.form-part {
+  width: 85%;
+}
+
+/* small tablet styles */
+/* large tablet & laptop styles */
+/* desktop styles */
+/*# sourceMappingURL=style.css.map */
