@@ -7,6 +7,8 @@
 body {
     width: 100vw;
     height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,18 +16,20 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.component {
+.container {
     display: flex;
     flex-direction: column;
 }
 
 
 /* -------------------- UPPER PART -------------- */
-.upper-part {
+#upper-part {
     display: grid;
-    width: 370px;
-    height: 300px;
-    border: 1px solid red;
+    width: 350px;
+    height: 310px;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-color: white;
     align-items: center;
     justify-items: center;
     grid-template: 
@@ -35,25 +39,39 @@ body {
         "details" 1.5fr;
 }
 
-.upper-part .details {
+#upper-part .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     grid-area: details;
 }
 
-.upper-part img {
+#upper-part img {
     grid-area: img;
     border-radius: 50%;
-    border: 5px solid pink;
+    border: 5px solid white;
 }
 
 /* -------------------- LOWER PART -------------- */
 
-.lower-part {
+#lower-part {
     display: flex;
+    background-color: white;
     justify-content: space-evenly;
-    border: 1px solid blue;
+    align-items: center;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    height: 100px;
+    
+    text-align: center;
 }
 
 .attribution {
     position: fixed;
     bottom: 0;
+}
+
+.amount {
 }
