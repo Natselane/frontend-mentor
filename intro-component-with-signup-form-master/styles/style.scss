@@ -32,10 +32,58 @@ body {
 }
 
 .form-part {
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    p:first-child {
+        background-color: $accent-blue-color;
+        border-radius: 10px;
+        padding: 20px 70px;
+        margin-bottom: 20px;
+        box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    input {
+        color: $neutral-dark-blue-color;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid $neutral-grayish-blue-color;
+        outline: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+
+    input:focus {
+        border: 1px solid $neutral-dark-blue-color;
+    }
+
+    button {
+        background-color: $primary-green-color;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        border-radius: 5px;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+
+    #footnote {
+        color: $neutral-grayish-blue-color;
+        margin-top: 15px;
+        padding: 0 15px;
+        text-align: center;
+        font-size: 0.7rem;
+
+        span {
+            color: $primary-red-color;
+            font-weight: 700;
+        }
     }
 }
 
@@ -52,6 +100,17 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+.form-part {
+    p:first-child {
+        font-weight: 400;
+        text-align: center;
+        
+        span {
+            font-weight: 600;
+        }
+    }
 }
 
 /* mobile styles */
