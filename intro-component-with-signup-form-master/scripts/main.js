@@ -6,7 +6,7 @@ const form = document.querySelector("form");
 const errorElements = document.querySelectorAll(".error");
 
 form.addEventListener("submit", (e) => {
-    // Stop form from submiting
+    // Stop form from submitting
     e.preventDefault();
     
     checkInputs();
@@ -44,6 +44,9 @@ function validateEmail(email) {
 }
 
 function setErrorFor(input, message) {
-    const error = input.nextElementSibling;
+    const icon = input.nextElementSibling;
+    const error = icon.nextElementSibling;
     error.innerText = message;
+    icon.classList.add("icon-show");
+    input.classList.add("warning");
 }
