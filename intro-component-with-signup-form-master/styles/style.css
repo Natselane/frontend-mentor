@@ -194,7 +194,7 @@ body {
 /* desktop styles */
 @media screen and (min-width: 1400px) {
   body {
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(../images/bg-intro-desktop.png);
   }
   .container {
     -webkit-box-orient: horizontal;
