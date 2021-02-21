@@ -8,12 +8,72 @@
 }
 
 /* base styles */
+body {
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: #858fad;
+  font-size: 15px;
+}
+
+header {
+  text-align: center;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header h1 {
+  color: #293356;
+}
+
+form {
+  background-color: white;
+}
+
 /* fonts */
 body {
   font-family: 'Manrope', sans-serif;
 }
 
 /* mobile styles */
+.container {
+  width: 90%;
+  margin: 40px auto;
+}
+
+header {
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  width: 60%;
+  margin: auto;
+}
+
+form {
+  margin: 20px 0;
+}
+
+form .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* small tablet styles */
 /* large tablet & laptop styles */
 /* desktop styles */

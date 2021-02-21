@@ -19,36 +19,34 @@
 </head>
 <body>
 
-  <header>
-    <h1>Simple, traffic-based pricing</h1>
-    <p>Sign-up for our 30-day trial. No credit card required. </p>
-  </header>
-
-  <form action="">
-
-    <div>
-      <span id="page-views"></span>Pageviews
-      <input type="range" name="views" id="views" min="1" max="5">
-      <label for="views"></label>
-      $<span id="money"></span> /month
+  <div class="container">
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+    </header>
+    <form action="">
+      <div class="slider">
+        <span id="page-views"></span>Pageviews
+        <input type="range" name="views" id="views" min="1" max="5">
+        <label for="views"></label>
+        $<span id="money"></span> /month
+      </div>
+      <div>
+        Monthly Billing
+        Yearly Billing 25% discount
+      </div>
+      <div>
+        <p>Unlimited websites</p>
+        <p>100% data ownership</p>
+        <p>Email reports</p>
+        <button type="submit">Start my trial</button>
+      </div>
+    </form>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </div>
-
-    <div>
-      Monthly Billing
-      Yearly Billing 25% discount
-    </div>
-
-    <div>
-      <p>Unlimited websites</p>
-      <p>100% data ownership</p>
-      <p>Email reports</p>
-      <button type="submit">Start my trial</button>
-    </div>
-  </form>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 
   <script src="scripts/index.js"></script>
