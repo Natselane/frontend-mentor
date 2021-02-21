@@ -1,0 +1,20 @@
+/* variables */
+/* reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* base styles */
+/* fonts */
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* mobile styles */
+/* small tablet styles */
+/* large tablet & laptop styles */
+/* desktop styles */
+/*# sourceMappingURL=style.css.map */
