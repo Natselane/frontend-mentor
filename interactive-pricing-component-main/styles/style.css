@@ -59,6 +59,7 @@ header p {
 
 form {
   margin: 20px 0;
+  padding: 20px;
 }
 
 form .slider {
@@ -72,6 +73,20 @@ form .slider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+form .slider .page-views {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form .slider #money-amount {
+  color: #293356;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 /* small tablet styles */

@@ -71,11 +71,26 @@ header {
 
 form {
     margin: 20px 0;
+    padding: 20px;
 
     .slider {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .page-views {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        #money-amount {
+            color: $dark-desaturated-blue-color;
+            font-weight: 800;
+            font-size: 2rem;
+        }
     }
 }
 
