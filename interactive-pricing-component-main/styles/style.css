@@ -32,6 +32,68 @@ form {
   background-color: white;
 }
 
+/* toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 23px;
+  /* The slider */
+  /* Rounded sliders */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch span.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cdd7ee;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch span.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input:checked + span.slider {
+  background-color: #10d5c2;
+}
+
+.switch input:focus + span.slider {
+  -webkit-box-shadow: 0 0 1px #10d5c2;
+          box-shadow: 0 0 1px #10d5c2;
+}
+
+.switch input:checked + span.slider:before {
+  -webkit-transform: translateX(15px);
+  transform: translateX(20px);
+}
+
+.switch span.slider.round {
+  border-radius: 34px;
+}
+
+.switch span.slider.round:before {
+  border-radius: 50%;
+}
+
 /* fonts */
 body {
   font-family: 'Manrope', sans-serif;
@@ -59,7 +121,6 @@ header p {
 
 form {
   margin: 20px 0;
-  padding: 20px;
 }
 
 form .slider {
@@ -83,10 +144,53 @@ form .slider .page-views {
   margin-bottom: 20px;
 }
 
+form .slider input[type=range] {
+  width: 90%;
+  -webkit-appearance: none;
+}
+
 form .slider #money-amount {
   color: #293356;
   font-weight: 800;
   font-size: 2rem;
+}
+
+form .billing {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+}
+
+form .checks {
+  border-top: 1px solid #cdd7ee;
+  width: 100%;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+form .checks p {
+  padding-bottom: 1em;
 }
 
 /* small tablet styles */

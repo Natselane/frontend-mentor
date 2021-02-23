@@ -41,7 +41,68 @@ header {
 
 form {
     background-color: $white-color;
+}
 
+/* toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 23px;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+    
+    /* The slider */
+    span.slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $light-grayish-blue-color;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    span.slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked + span.slider {
+        background-color: $strong-cyan-color;
+    }
+    
+    input:focus + span.slider {
+        box-shadow: 0 0 1px $strong-cyan-color;
+    }
+    
+    input:checked + span.slider:before {
+        -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        transform: translateX(20px);
+    }
+    
+    /* Rounded sliders */
+    span.slider.round {
+        border-radius: 34px;
+    }
+    
+    span.slider.round:before {
+        border-radius: 50%;
+    }
 }
 
 /* fonts */ 
@@ -71,7 +132,6 @@ header {
 
 form {
     margin: 20px 0;
-    padding: 20px;
 
     .slider {
         display: flex;
@@ -86,10 +146,38 @@ form {
             margin-bottom: 20px;
         }
 
+        input[type=range] {
+            width: 90%;
+            -webkit-appearance: none;
+        }
+
         #money-amount {
             color: $dark-desaturated-blue-color;
             font-weight: 800;
             font-size: 2rem;
+        }
+    }
+
+    .billing {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .checks {
+        border-top: 1px solid $light-grayish-blue-color;
+        width: 100%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        p {
+            padding-bottom: 1em;
         }
     }
 }
