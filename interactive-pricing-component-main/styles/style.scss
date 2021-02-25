@@ -1,15 +1,15 @@
 /* variables */ 
-$soft-cyan-color: hsl(174, 77%, 80%);
+$soft-cyan-color: #a5f3eb;
 $strong-cyan-color: #10d5c2;
-$light-grayish-red-color: hsl(14, 92%, 95%);
-$light-red-color:  hsl(15, 100%, 70%);
-$pale-blue-color: hsl(226, 100%, 87%);
-$white-color: hsl(0, 0%, 100%);
-$very-pale-blue-color: hsl(230, 100%, 99%);
+$light-grayish-red-color: #feece7;
+$light-red-color:  #ff8c66;
+$pale-blue-color: #bdccff;
+$white-color: #ffffff;
+$very-pale-blue-color: #fafbff;
 $light-grayish-blue-color: #eaeefb;
-$light-grayish-blue-color: hsl(223, 50%, 87%);
-$grayish-blue-color: hsl(225, 20%, 60%);
-$dark-desaturated-blue-color: hsl(227, 35%, 25%);
+$light-grayish-blue-color: #cdd7ee;
+$grayish-blue-color: #858fad;
+$dark-desaturated-blue-color: rgb(41, 51, 86);
 
 /* reset */
 * {
@@ -214,54 +214,73 @@ header {
 }
 
 form {
-    margin: 20px 0;
+    margin: 20px auto;
+    text-align: center;
+}
 
-    .slider {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-        .page-views {
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            font-size: 0.8rem;
-            font-weight: 800;
-            margin: 30px 0;
-        }
+  .page-views {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+  }
 
-        .money-per-month {
-            margin-top: 15px;
-        }
+  .money-per-month {
+      margin-top: 15px;
+  }
 
-        #money-amount {
-            color: $dark-desaturated-blue-color;
-            font-weight: 800;
-            font-size: 2rem;
-        }
+  #money-amount {
+      color: $dark-desaturated-blue-color;
+      font-weight: 800;
+      font-size: 2rem;
+  }
+}
+
+.billing {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.checks {
+  border-top: 1px solid $light-grayish-blue-color;
+  width: 100%;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  
+  p {
+      padding-bottom: 1em;
+  }
+
+  ul {
+    list-style: url('../images/icon-check.svg');
+    width: 100%;
+    text-align: center;
+
+    li {
+      margin-top: 10px;
     }
+  }
+}
 
-    .billing {
-        margin: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.8rem;
-    }
-
-    .checks {
-        border-top: 1px solid $light-grayish-blue-color;
-        width: 100%;
-        padding-top: 20px;
-        font-size: 0.8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-
-        p {
-            padding-bottom: 1em;
-        }
-    }
+button {
+  margin: 20px;
+  width: 12rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50px;
+  background-color: $dark-desaturated-blue-color;
+  color: $pale-blue-color;
+  font-weight: 600;
+  
 }
 
 /* small tablet styles */ 
