@@ -67,7 +67,7 @@ input[type=range] {
     height: 26px;
     background: #10d5c2;
     border: 1.8px solid rgba(0, 0, 0, 0);
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
     -webkit-appearance: none;
   }
@@ -83,9 +83,13 @@ input[type=range] {
     cursor: pointer;
   }
   input[type=range]::-moz-range-thumb {
-    width: 26px;
-    height: 26px;
+    width: 35px;
+    height: 35px;
     background: #10d5c2;
+    background-image: url('../images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: 11px;
     border: 1.8px solid rgba(0, 0, 0, 0);
     border-radius: 20px;
     cursor: pointer;
@@ -280,7 +284,6 @@ button {
   background-color: $dark-desaturated-blue-color;
   color: $pale-blue-color;
   font-weight: 600;
-  
 }
 
 /* small tablet styles */ 
