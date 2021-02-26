@@ -10,21 +10,18 @@
   <link rel="stylesheet" href="styles/style.css">
   
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <div class="container">
+    
     <header>
       <h1>Simple, traffic-based pricing</h1>
       <p>Sign-up for our 30-day trial. No credit card required. </p>
     </header>
+
     <form action="">
+
       <div class="slider">
         <p class="page-views"><span id="views-amount"></span>Pageviews</p>
         <input type="range" name="views" id="views" min="1" max="5">
@@ -33,12 +30,13 @@
       </div>
 
       <div class="billing">
-        <p>Monthly Billing</p>
+        <div>Monthly Billing</div>
         <label class="switch">
           <input type="checkbox">
           <span class="slider round"></span>
         </label>
-        <p>Yearly Billing <span id="percent">-25%</span> </p>
+        <div>Yearly Billing</div>
+        <div id="percent">-25%</div>
       </div>
 
       <div class="checks">
@@ -53,7 +51,7 @@
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Natselane">Natselane</a>.
     </div>
   </div>
 

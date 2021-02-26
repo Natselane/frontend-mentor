@@ -268,6 +268,13 @@ form {
   font-size: 0.8rem;
 }
 
+.billing #percent {
+  background-color: #feece7;
+  color: #ff8c66;
+  border-radius: 25px;
+  padding: 3px 10px;
+}
+
 .checks {
   border-top: 1px solid #cdd7ee;
   width: 100%;
@@ -292,12 +299,21 @@ form {
 button {
   margin: 20px;
   width: 12rem;
-  height: 2.5rem;
+  height: 2.7rem;
   border: 0;
   border-radius: 50px;
   background-color: #293356;
   color: #bdccff;
   font-weight: 600;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution .attribution a {
+  color: #3e52a3;
 }
 
 /* small tablet styles */

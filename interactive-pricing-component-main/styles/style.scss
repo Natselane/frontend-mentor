@@ -252,6 +252,13 @@ form {
   justify-content: space-between;
   align-items: center;
   font-size: 0.8rem;
+
+  #percent {
+    background-color: $light-grayish-red-color;
+    color: $light-red-color;
+    border-radius: 25px;
+    padding: 3px 10px;
+  }
 }
 
 .checks {
@@ -278,13 +285,23 @@ form {
 button {
   margin: 20px;
   width: 12rem;
-  height: 2.5rem;
+  height: 2.7rem;
   border: 0;
   border-radius: 50px;
   background-color: $dark-desaturated-blue-color;
   color: $pale-blue-color;
   font-weight: 600;
 }
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+}
+    
 
 /* small tablet styles */ 
 @media screen and (min-width: 620px) {
