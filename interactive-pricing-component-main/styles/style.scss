@@ -6,7 +6,7 @@ $light-red-color:  #ff8c66;
 $pale-blue-color: #bdccff;
 $white-color: #ffffff;
 $very-pale-blue-color: #fafbff;
-$light-grayish-blue-color: #eaeefb;
+$lighter-grayish-blue-color: #eaeefb;
 $light-grayish-blue-color: #cdd7ee;
 $grayish-blue-color: #858fad;
 $dark-desaturated-blue-color: rgb(41, 51, 86);
@@ -49,86 +49,86 @@ input[type=range] {
     margin: 9px 0;
     background-color: transparent;
     -webkit-appearance: none;
-  }
-  input[type=range]:focus {
-    outline: none;
-  }
-  input[type=range]::-webkit-slider-runnable-track {
-    background: rgba(234, 238, 251, 0.8);
-    border: 0;
-    border-radius: 10px;
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-  }
-  input[type=range]::-webkit-slider-thumb {
-    margin-top: -9px;
-    width: 26px;
-    height: 26px;
-    background: #10d5c2;
-    border: 1.8px solid rgba(0, 0, 0, 0);
-    border-radius: 50px;
-    cursor: pointer;
-    -webkit-appearance: none;
-  }
-  input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ffffff;
-  }
-  input[type=range]::-moz-range-track {
-    background: rgba(234, 238, 251, 0.8);
-    border: 0;
-    border-radius: 10px;
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-  }
-  input[type=range]::-moz-range-thumb {
-    width: 35px;
-    height: 35px;
-    background: #10d5c2;
-    background-image: url('../images/icon-slider.svg');
-    background-repeat: no-repeat;
-    background-position-x: 7px;
-    background-position-y: 11px;
-    border: 1.8px solid rgba(0, 0, 0, 0);
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  input[type=range]::-ms-track {
-    background: transparent;
-    border-color: transparent;
-    border-width: 14.4px 0;
-    color: transparent;
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-  }
-  input[type=range]::-ms-fill-lower {
-    background: #d5ddf7;
-    border: 0;
-    border-radius: 20px;
-  }
-  input[type=range]::-ms-fill-upper {
-    background: rgba(234, 238, 251, 0.8);
-    border: 0;
-    border-radius: 20px;
-  }
-  input[type=range]::-ms-thumb {
-    width: 26px;
-    height: 26px;
-    background: #10d5c2;
-    border: 1.8px solid rgba(0, 0, 0, 0);
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 0px;
-    /*Needed to keep the Edge thumb centred*/
-  }
-  input[type=range]:focus::-ms-fill-lower {
-    background: rgba(234, 238, 251, 0.8);
-  }
-  input[type=range]:focus::-ms-fill-upper {
-    background: #ffffff;
-  }
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #eaeefbcc;
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -9px;
+  width: 26px;
+  height: 26px;
+  background: #10d5c2;
+  border: 1.8px solid rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+input[type=range]::-moz-range-track {
+  background: $light-grayish-blue-color;
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  background: #10d5c2;
+  background-image: url('../images/icon-slider.svg');
+  background-repeat: no-repeat;
+  background-position-x: 7px;
+  background-position-y: 11px;
+  border: 1.8px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 14.4px 0;
+  color: transparent;
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+}
+input[type=range]::-ms-fill-lower {
+  background: #d5ddf7;
+  border: 0;
+  border-radius: 20px;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(234, 238, 251, 0.8);
+  border: 0;
+  border-radius: 20px;
+}
+input[type=range]::-ms-thumb {
+  width: 26px;
+  height: 26px;
+  background: #10d5c2;
+  border: 1.8px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(234, 238, 251, 0.8);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ffffff;
+}
 
 /* toggle */
 .switch {
@@ -262,7 +262,7 @@ form {
 }
 
 .checks {
-  border-top: 1px solid $light-grayish-blue-color;
+  border-top: 1px solid $lighter-grayish-blue-color;
   width: 100%;
   padding-top: 20px;
   font-size: 0.8rem;
