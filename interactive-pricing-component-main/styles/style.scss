@@ -110,7 +110,7 @@ input[type=range]::-ms-fill-lower {
 }
 input[type=range]::-ms-fill-upper {
   background: rgba(234, 238, 251, 0.8);
-  border: 0;
+  border: 10px solid red;
   border-radius: 20px;
 }
 input[type=range]::-ms-thumb {

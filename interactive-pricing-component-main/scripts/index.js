@@ -26,8 +26,6 @@ const DOM = (function() {
     }
 })();
 
-
-
 DOM.range.onchange = function() {
     DOM.updatePageViews(DOM.range.value);
     DOM.updateMoneyAmount(DOM.range.value);
